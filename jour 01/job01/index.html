@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>job01 js</title>
     <script>
-        function myFunction() {
+        function myopen() {
           document.getElementById("demo").innerHTML = "hellojavascrip!";
         }
+        
+        function myclose() {
+          document.getElementById('demo').style.display='none';
+        }
+
+
         </script>
 </head>
 <body>
-    <p id="demo"></p>
-    <button type="button" onclick="myFunction()">click me</button>
+    <div class="container">
+      <p id="demo"></p>
+      <button type="button" onclick="myclose()">ok</button>
+    </div>
+
+    <button type="button" onclick="myopen()">click me</button>
 </body>
 </html>
