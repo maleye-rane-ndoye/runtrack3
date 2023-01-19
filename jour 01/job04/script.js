@@ -1,4 +1,9 @@
+
+let annee;
 function bisextile(){
-   let année;
-   
+   if(annee = 366){
+    return true;
+   }else{
+    return false;
+   }
 }
