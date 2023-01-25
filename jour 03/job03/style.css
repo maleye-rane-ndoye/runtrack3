@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+:root{ 
+    --blue: #3498db;
+    --dark-blue:#349;
+    --red: #c0392b;;
+    --dark-red:rgba(143, 26, 5, 0.863);
+    --black:#333;
+    --white:#fff;
+    --light-bg:#eee;
+    --box-shadow:5px 5px 10px rgba(0,0,.1,.1);
+    --grey-soft: #4e4e4e71;
+}
+
+ body{
+    background-color: var(--light-bg);
+    min-height: 100vh;
+   
+ }
+
+ h3{
+    font-size: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    margin-top: 10px;
+ }
+ .container{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .game{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100px 100px 100px ;
+    grid-template-rows: 100px 100px 100px ;
+    grid-gap: 55px;
+    background-color:rgba(5, 43, 5, 0.993);
+    box-shadow: var(--box-shadow);
+    border-style: solid double;
+    border-width: 10px;
+    border-bottom-color: var(--red);
+    border-top-color: var(--dark-blue);
+    border-left-color: rgb(197, 152, 3);
+    border-right-color: green;
+   
+   
+}
+.item1{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background-image: url(GridPost_1.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.item2{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background-image: url(GridPost_2.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.item4{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background-image: url(GridPost_4.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.item5{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background-image: url(GridPost_5.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.item6{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background-image: url(GridPost_6.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.item7{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background-image: url(GridPost_7.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.item8{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background-image: url(GridPost_8.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.item9{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background-image: url(GridPost_9.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.empty3{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background-image: url();
+    background-size: cover;
+    text-align: center;
+    line-height: 150px;
+    font-size: 24px;
+}
+
+.trick img{
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    box-shadow: var(--box-shadow);
+    border-style: solid double;
+    border-width: 10px;
+    border-bottom-color: var(--red);
+    border-top-color: var(--dark-blue);
+    border-left-color: rgb(197, 152, 3);
+    border-right-color: green;
+}
+.victory{
+    font-size: 30px;
+    font-family: 'Alfa Slab One', cursive;
+    opacity: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
