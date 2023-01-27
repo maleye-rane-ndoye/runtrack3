@@ -8,25 +8,26 @@
     <title>Jour03 job03</title>
     <script src="script.js" defer></script>
 </head>
-<body onload="loadgame()">
+<body>
+  <button onclick="shuffle()">Shuffle Game</button>
   <h3>Taquin logo la platefome: reconstruire le logo de la plateforme à droite</h3>
       <div class="container">
           <div class="trick">
               <img src="logoo0.png" alt="">
           </div>
-          <div class="game" id="game">
-                  <div class="item1"></div>
-                  <div class="item2"></div>
-                  <div class="empty3">vide</div>
-                  <div class="item4"></div>
-                  <div class="item5"></div>
-                  <div class="item6"></div>
-                  <div class="item7"></div>
-                  <div class="item8"></div>
-                  <div class="item9"></div>
+          <div id="game">
+                  <div id="item1" draggable="true"></div>
+                  <div id="item2" draggable="true"></div>
+                  <div id="item3" class="empty3" class="droptarget" id="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)" >vide</div>
+                  <div id="item4" draggable="true" id="dragtarget"></div>
+                  <div id="item5" draggable="true"></div>
+                  <div id="item6" draggable="true"></div>
+                  <div id="item7" draggable="true"></div>
+                  <div id="item8" draggable="true"></div>
+                  <div id="item9" draggable="true"></div>
           </div>
       </div>
-      <div class="victory">
+      <div class="victory" id="victory">
         vous l'avez fait! Bravo.
       </div>
 
