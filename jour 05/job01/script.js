@@ -50,7 +50,7 @@ form.addEventListener('submit', (e) => {
     if(password.value === '' || password.value == null){
         messages.push('Entrer votre mot de passe')
     }
-    if(firstname.value.length <= 6){
+    if(password.value.length < 8){
         messages.push('mot de passe,8 caracteres au minimum')
     }
     if( messages.length > 0){

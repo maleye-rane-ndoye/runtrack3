@@ -1,8 +1,14 @@
-<?php 
-    
- 
-
-
+<?php
+    session_start();
+         include 'User.php'; 
+         $user = new User();
+         
+         if(isset($_POST['authentification'])){
+          $email = $_POST['email'];
+          $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+          $message[] = "";
+            $user->login($email, $password);
+        }
 
 ?>
 <!DOCTYPE html>
@@ -18,11 +24,12 @@
 <body>
     <div class="containe">
         <form id="login" class="form-containe" >
-            <input type="text" name="email" id="loginemail" placeholder="Entrer votre email" class="box">
+            <input type="email" name="email" id="loginemail" placeholder="Entrer votre email" class="box">
             <p class="check" id="error5"></p>
             <input type="password" name="password" id="loginpass" placeholder="Entrer votre mot de passe" class="box">
             <p class="check" id="error6"></p>
-            <button type="submit" onclick= 'checkLogin()' class="button">valider</button>
+            <button type="submit" name="authentification" onclick= 'checkLogin()' class="button">valider</button>
+            
         </form>
     </div>
 </body>

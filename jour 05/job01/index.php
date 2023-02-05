@@ -1,9 +1,6 @@
-<?php 
-
-
-
-
-
+<?php
+session_start();
+include 'User.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +19,15 @@
         <div class="link"><a href="connexion.php">Connexion</a></div>
     </div>
 
-    <div class="para"><p>Bonjour Maleye Rane </p></div>
+    <div class="para">
+        <?php 
+        require 'connexion.php';
+        if(isset($_SESSION['email'])){
+            $email = $_SESSION['email'];
+            echo 'Bonjour '. $prenom;
+        }
+        ?>
+                                     
+    </div>
 </body>
 </html>

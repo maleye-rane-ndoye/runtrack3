@@ -1,9 +1,19 @@
 <?php 
 
+include 'User.php';
+$user = new User();
 
 
-
-
+if(isset($_POST['submit'])){
+     $nom = $_POST['nom'];
+     $prenom = $_POST['prenom'];
+     $email = $_POST['email'];
+     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+     $cpassword = password_hash($_POST['cpassword'], PASSWORD_DEFAULT);
+     $message[] = "";
+         $user->register($nom, $prenom, $email, $password);
+         
+   }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +43,7 @@
 
                 <input type="password" name="cpassword" id="cpassword" placeholder="confirmer votre mot de passe" class="box">
                 <p class="check" id="error4"></p>
-                <button type="submit" class="button">Envoyer</button>
+                <button type="submit" name="submit" class="button">Envoyer</button>
            </form>
       </div>
 </body>
