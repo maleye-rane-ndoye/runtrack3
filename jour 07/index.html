@@ -8,44 +8,47 @@
     
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-sky-100">
 
-<header>
-    <h1>Mon premier Tailwind</h1>
-    Cette page montre une page stylée avec le framwork tailind.
+<header class="max-w text-center bg-sky-300 border-b-4 border-white">
+    <h1 class="max-w-sm text-2xl font-bold italic pt-7">Mon premier Tailwind</h1>
+    <P class="text-xl pb-3">Cette page montre une page stylée avec le framwork tailwind.</P>
 </header>
-<section>
-    <div>
-          <form method="post">
-            <label for="civilité">M</label>
-            <input type="radio" name="civilité">
-            <label for="civilité">F</label>
-            <input type="radio" name="civilité">
-            <input type="text" name="prenom" placeholder="Entrer votre prénom" class="text-ski-500">
-            <input type="text" name="nom" placeholder="Enter votre nom">
-            <input type="email" name="email" placeholder="Entrer votre adresse mail">
-            <input type="password" name="password" placeholder="entrer votre mt de passe" >
-            <input type="password" name="cpassword" placeholder="confirmer votre mt de passe" >
-            <select name="passions">
+<section class="pt-10 mb-10">
+    <div class="p-6 max-w-xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+          <form method="post" class="w-full mx-auto text-xl font-medium text-black flex flex-col">
+            <div class="flex-row">
+                    <label for="civilité">M</label>
+                    <input type="radio" name="civilité">
+                    <label for="civilité">F</label>
+                    <input type="radio" name="civilité">
+            </div>
+
+            <input type="text" name="prenom" placeholder="Entrer votre prénom" class="h-10 border-b-4 border-sky-300 bg-sky-50 mb-2 rounded-md">
+            <input type="text" name="nom" placeholder="Enter votre nom" class="h-10 border-b-4 border-sky-300 bg-sky-50 mb-2 rounded-md">
+            <input type="email" name="email" placeholder="Entrer votre adresse mail" class="h-10 border-b-4 border-sky-300 bg-sky-50 mb-2 rounded-md">
+            <input type="password" name="password" placeholder="entrer votre mt de passe" class="h-10 border-b-4 border-sky-300 bg-sky-50 mb-2 rounded-md" >
+            <input type="password" name="cpassword" placeholder="confirmer votre mt de passe" class="h-10 border-b-4 border-sky-300 bg-sky-50 mb-2 rounded-md">
+            <select name="passions" class="h-10 border-b-4 border-sky-300 bg-sky-50 mb-2 rounded-md">
                 <option value="informatique">informatique</option>
                 <option value="Voyage">Voyage</option>
                 <option value="Sport">Sport</option>
                 <option value="Lecture">Lecture</option>
             </select>
                 
-            <button type="submit" onclick="myFunction()">Envoyer</button>
+            <button type="submit" onclick="myFunction()" class="h-10 w-20 mx-auto rounded-md bg-sky-600 hover:bg-sky-400 text-white">Envoyer</button>
 
 
           </form>
     </div>
 </section>
-<footer>
-    <div>
-            <h3>cette partie de mon code est e footer</h3>
-            <div><a href="">Accueil</a></div>
-            <div><a href="">Inscription</a></div>
-            <div><a href="">Connexion</a></div>
-            <div><a href="">Rechercher</a></div>
+<footer class="bg-stone-200 border-t-4 border-sky-300 flex-col ">
+    <h3 class="text-center text-2xl italic mb-10"> Ce vent de dos est vraiment génial jai vraiment kiffer</h3>
+    <div class="flex justify-end justify-around pb-10">
+            <div><a href="" class="text-xl text-sky-400 hover:text-white">Accueil</a></div>
+            <div><a href="" class="text-xl text-sky-400 hover:text-white">Inscription</a></div>
+            <div><a href="" class="text-xl text-sky-400 hover:text-white">Connexion</a></div>
+            <div><a href="" class="text-xl text-sky-400 hover:text-white">Rechercher</a></div>
     </div>
 </footer>
           
